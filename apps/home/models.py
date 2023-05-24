@@ -12,7 +12,8 @@ class Usuario(models.Model):
     domicilio = models.CharField(max_length=100)
     
     def __str__(self):
-        return self.apellido,self.nombre + " - D.N.I.: " + str(self.dni)
+        return self.apellido
+        #return "Apellido y Nombre: " + self.apellido,self.nombre + " - D.N.I.: " + str(self.dni)
         
 class Artista(models.Model):
     apellido = models.CharField(max_length=100)
@@ -20,16 +21,16 @@ class Artista(models.Model):
     nacionalidad = models.CharField(max_length=30)
     
     def __str__(self):
-        return self.apellido, self.nombre
-    
+        return self.apellido
+        #return "Apellido y Nombre: " + self.apellido, self.nombre
 
 class Album(models.Model):
     nombre = models.CharField(max_length=100)
     fecha_de_lanzamiento = models.DateField()
-    estilo = models.DateField(max_length=50)
+    estilo = models.CharField(max_length=50)
     
     def __str__(self):
-        return self.nombre, self.estilo
-    
+        return self.nombre
+        #return "Nombre: " +self.nombre + "Estilo de Musica: " +self.estilo
     
     
