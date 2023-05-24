@@ -1,3 +1,9 @@
 from django.contrib import admin
+from . import models
 
-# Register your models here.
+# Registro los modelos.
+
+admin.site.register(models.Usuario)
+admin.site.register(models.Artista)
+admin.site.register(models.Album)
+
