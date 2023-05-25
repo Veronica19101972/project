@@ -35,3 +35,4 @@ def crear_album(request):
         form = forms.AlbumForm()
     return render(request, "home/crear_album.html",{"form": form})
 
+

@@ -1,10 +1,13 @@
 {% extends 'home/base.html' %}
 
 {% block contenido %}
-    <h1> Menú Principal </h1>
-    
+    <h1 style="color:brown"> Menú Principal </h1>
+    <br>
     <a href="{% url 'home:crear_usuario' %}"> Crear Usuario</a> <br>
     <a href="{% url 'home:crear_artista' %}"> Crear Artista</a> <br>
     <a href="{% url 'home:crear_album' %}"> Crear Album</a> <br>
-
+    <a href="https://www.coderhouse.com/"> Salir a CODERHOUSE</a><br>
+    <a href="https://www.google.com.ar/"> Salir a GOOGLE</a><br>
+    <br>
+    <br>
 {% endblock contenido %}
