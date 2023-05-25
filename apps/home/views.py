@@ -1,4 +1,4 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render
 from . import forms
 
 # Create your views here.
@@ -33,7 +33,5 @@ def crear_album(request):
             return render(request, "home/index.html")
     else:
         form = forms.AlbumForm()
-        context = {"form": form}
-        return render(request, "home/crear_album.html", context)
-    
+    return render(request, "home/crear_album.html",{"form": form})
 
