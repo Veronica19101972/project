@@ -1,6 +1,10 @@
 {% extends 'home/base.html' %}
 
 {% block contenido %}
-    <h2> Menú Principal </h2>
+    <h1> Menú Principal </h1>
     
+    <a href="{% url 'home:crear_usuario' %}"> Crear Usuario</a> <br>
+    <a href="{% url 'home:crear_artista' %}"> Crear Artista</a> <br>
+    <a href="{% url 'home:crear_album' %}"> Crear Album</a> <br>
+
 {% endblock contenido %}
